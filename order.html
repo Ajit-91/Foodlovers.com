@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodLover.com / Order</title>
+</head>
+<link rel="stylesheet" href="order.css">
+<body>
+    <header>
+    
+        <nav id="navbar">
+            <div id="logo"><img src="https://uploads-ssl.webflow.com/5aa276d9013ff400018dd256/5c51765c9eafd76482480fc1_food.png" alt="logo"></div>
+            <ul>
+                <li> <a href="index.html"> Home</a></li>
+                <li> <a href="Menu.html">Food Menu</a> </li>
+                <li> <a href="about.html">About Us</a> </li>
+                <li> <a href="order.html"> Order Now</a></li>
+                <li id="search"> <input type="search" placeholder="Search food" name="search"></li>
+            </ul>
+            
+        </nav>
+        <div id="banner">
+            <h1>Welcome</h1>
+        </div>
+    </header>
+
+    <br><br>
+    <h2><b>Place your order</b></h2>
+    <div id="order">
+       
+    <form action="/server.php" method="POST">
+    <label for=""></label>
+    <label for="food-type">
+        What type of food you want?
+    </label>
+    <select name="food-items">
+        <option value="blank">...</option>
+        <option value="veg">Veg</option>
+        <option value="non-veg">Non-Veg</option>
+    </select>
+    <br><br><br><br>
+
+    <label for="food">What would you like to order?</label>
+    <select name="food">
+        <option value="Burger">...</option>
+        <option value="Burger">Burger</option>
+        <option value="Ice-Cream">Ice-Cream</option>
+        <option value="Pizza">Pizza</option>
+        <option value="Kheer">Kheer</option>
+        <option value="Rumali Roti">Rumali Roti</option>
+        <option value="Chicken Biryani">Chicken Biryani</option>
+    </select>
+    <br><br><br><br>
+
+    <label for="count">Quantity : </label>
+    <input type="number" required>
+    
+    <br><br><br><br>
+    <label for="telephone">Contact Number : </label>
+    <input type="tel" required>
+    <br><br><br><br>
+
+    <label for="address">Enter your Address : </label><br>
+    <textarea name="address" cols="60" rows="6" required></textarea>
+    <br><br><br><br>
+
+    <input id="btn" type="submit" value="Order Now">
+    <br><br><br><br>
+    </form>
+</div>
+    
+<footer>
+    <h4>Contact details :</h4>
+    <ul ><a href="tel:+9178867656" >+91-78867656</a></ul>
+    <ul ><a href="mailto:foodlover@gmail.com" >foodlover@gmail.com</a></ul>
+    <p> &copy; foodlover.com </p>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima delectus at natus. Ad dicta delectus quis similique debitis tempora eveniet!</p>
+</footer>
+</body>
+</html>
